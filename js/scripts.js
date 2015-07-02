@@ -41,13 +41,10 @@ $(document).ready(function(){
     var inputtedSize = $("select#size").val();
     var inputtedToppings = $("select#toppings").val();
 
-    // newPizza.quantity(inputtedQuantity)
-    // newPizza.size(inputtedSize)
-    // newPizza.toppings(inputtedToppings)
 
     (newPizza.cost + newPizza.size(inputtedSize) + newPizza.toppings(inputtedToppings)) * newPizza.quantity(inputtedQuantity)
 
-    $(".ordertotal").text(newPizza.cost);
+    $(".ordertotal").text("$" + newPizza.cost);
 
     event.preventDefault();
 

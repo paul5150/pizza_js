@@ -11,60 +11,59 @@
   <div class="container">
 
     <div class="jumbotron">
+
       <h1>Pizza Joint</h1>
-    </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>What kind of Pizza?</h3>
+          
+          <div id="order-form">
 
-    <div class="row">
-      <div class="col-sm-4">
+            <form id="order">
 
-        <h3>What kind of Pizza?</h3>
+              <div class="form-group" style="float:left;">
+                <label for="quantity">quantity</label>
+                <input id="quantity" type="number" required>
+              </div>
 
-        <div id="order-form">
-          <form id="order">
+              <div class="form-group" style="float:left;">
+                <select id="size">
+                  <option value="small">Small ($10)</option>
+                  <option value="medium">Medium ($11)</option>
+                  <option value="large">Large ($12)</option>
+                </select>
+              </div>
 
-            <div class="form-group" style="float:left;">
-              <label for="quantity">quantity</label>
-              <input id="quantity" type="number" required>
-            </div>
+              <div class="form-group" style="float:left;">
+                <select id="toppings">
+                  <option value="Cheese">Cheese (+$0)</option>
+                  <option value="Veggie">Veggie (+$1)</option>
+                  <option value="Vegan">Vegan (+$2)</option>
+                  <option value="Meat">Meat (+$4)</option>
+                </select>
+              </div>
 
-            <div class="form-group" style="float:left;">
-              <select id="size">
-                <option value="small">Small ($10)</option>
-                <option value="medium">Medium ($11)</option>
-                <option value="large">Large ($12)</option>
-              </select>
-            </div>
+              <button type="submit" class="btn btn-success">Total</button>
 
-            <div class="form-group" style="float:left;">
-              <select id="toppings">
-                <option value="Cheese">Cheese (+$0)</option>
-                <option value="Veggie">Veggie (+$1)</option>
-                <option value="Vegan">Vegan (+$2)</option>
-                <option value="Meat">Meat (+$4)</option>
-              </select>
-            </div>
+            </form>
 
-            <button type="submit" class="btn btn-success">Add to order</button>
-          </form>
-        </div>
-
-        <br>
-        <hr>
-        <br>
-
-      </div>
-
-
-
-          <div class="grand-total" style="float:left;">
-            <h3>Order total:</h3>
-            <h2 class="ordertotal"></h2>
           </div>
 
-       </div>
-     </div>
-   </div>
+          <br>
+          <hr>
+          <br>
 
-  </div>
+          </div>
+
+            <div class="grand-total" style="float:left;">
+              <h3>Order total:</h3>
+              <h2 class="ordertotal"></h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
 </body>
 </html>
